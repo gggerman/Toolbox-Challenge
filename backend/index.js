@@ -1,13 +1,13 @@
-const express = require('express');
-const filesRoutes = require('./routes/filesRoutes');
+import express from 'express'
+import filesRoutes from './routes/filesRoutes.js'
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app = express()
+const PORT = process.env.PORT || 3000
 
-app.use('/files', filesRoutes);
+app.use('/files', filesRoutes)
 
 app.listen(PORT, () => {
-  console.log(`Servidor API corriendo en el puerto ${PORT}`);
-});
+  console.log(`Servidor API corriendo en el puerto ${PORT}`)
+})
 
-module.exports = app;
+export default app
