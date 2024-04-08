@@ -9,6 +9,7 @@
 - Javascript
 - React
 - Bootstrap
+- Redux
 
 ## Instruccions to run this project locally.
 
