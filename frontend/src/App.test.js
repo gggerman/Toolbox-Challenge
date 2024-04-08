@@ -32,6 +32,7 @@ describe('FilesTable Component', () => {
     expect(queryAllByText('mnbvcxzlkjhgfdsapoiuytrewq098765')).toHaveLength(1);
   });
 
+  // Creo un archivo vacío
   const emptyFile = [
     {
       file: 'test.csv',
@@ -41,7 +42,8 @@ describe('FilesTable Component', () => {
 
   it('renders message when no files are provided', () => {
     const { getByText } = render(<FilesTable files={emptyFile} />);
-    
+
+    // Verifica que al ser un archivo vacío, le notifique al usuario
     expect(getByText('No hay archivos correctos')).toBeInTheDocument();
   });
 });
