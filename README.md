@@ -57,3 +57,5 @@ npm install
 ```javascript
 npm start
 ```
+
+### See the project at http://localhost:3000/
