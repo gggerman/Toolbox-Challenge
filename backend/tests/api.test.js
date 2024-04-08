@@ -2,12 +2,14 @@ import axios from 'axios'
 import app from '../index.js'
 import { expect } from 'chai'
 
+const PORT = process.env.PORT || 3001
+
 describe('Backend API Tests', () => {
   describe('GET /files/data', () => {
     it('should return formatted files data', async function () {
       this.timeout(10000)
       try {
-        const res = await axios.get('http://localhost:3000/files/data')
+        const res = await axios.get(`http://localhost:${PORT}/files/data`)
         expect(res.status).to.equal(200)
         expect(res.data).to.be.an('array')
 
