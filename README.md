@@ -59,3 +59,19 @@ npm start
 ```
 
 ### See the project at http://localhost:3000/
+
+## Testing
+
+### Backend
+
+```javascript
+npm test
+```
+
+### Frontend
+
+```javascript
+npm test
+```
+### Press 'a' to run all tests.
+
