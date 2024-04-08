@@ -1,9 +1,11 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
+const PORT = process.env.PORT || 3001
+
 export const filesApi = createApi({
   reducerPath: 'filesQuery',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3001/',
+    baseUrl: `http://localhost:${PORT}/`,
     prepareHeaders: (headers, {getState}) => {
       headers.set('authorization', 'Bearer aSuperSecretKey')
       headers.set('Content-Type', 'application/json')

@@ -45,7 +45,7 @@ const Filter = () => {
   }, [isGetFileSuccess])
 
   return (
-    <Navbar bg="danger" variant="dark" className='px-1'>
+    <Navbar style={{backgroundColor: "#ff6666"}} variant="dark" className='px-1'>
       <Navbar.Brand href="#home">React Test App</Navbar.Brand>
       <Form inline>
         <Form.Group controlId="exampleForm.ControlSelect1">
