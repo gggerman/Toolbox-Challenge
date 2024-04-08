@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
-const API_PORT = process.env.REACT_APP_API_PORT;
+const API_PORT = process.env.REACT_APP_API_PORT || 3001;
 
 export const filesApi = createApi({
   reducerPath: 'filesQuery',
